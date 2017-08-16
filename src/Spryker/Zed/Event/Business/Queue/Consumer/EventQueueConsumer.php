@@ -144,7 +144,7 @@ class EventQueueConsumer implements EventQueueConsumerInterface
     /**
      * @param string $transferClass
      *
-     * @return \Spryker\Shared\Kernel\Transfer\TransferInterface
+     * @return \Spryker\Shared\Transfer\TransferInterface
      */
     protected function createEventTransfer($transferClass)
     {
@@ -192,7 +192,7 @@ class EventQueueConsumer implements EventQueueConsumerInterface
     /**
      * @param \Generated\Shared\Transfer\EventQueueSendMessageBodyTransfer $eventQueueSentMessageBodyTransfer
      *
-     * @return \Spryker\Shared\Kernel\Transfer\TransferInterface
+     * @return \Spryker\Shared\Transfer\TransferInterface
      */
     protected function mapEventTransfer(EventQueueSendMessageBodyTransfer $eventQueueSentMessageBodyTransfer)
     {

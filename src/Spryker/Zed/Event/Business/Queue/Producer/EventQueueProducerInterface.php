@@ -7,14 +7,14 @@
 
 namespace Spryker\Zed\Event\Business\Queue\Producer;
 
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 
 interface EventQueueProducerInterface
 {
 
     /**
      * @param string $eventName
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $eventTransfer
+     * @param \Spryker\Shared\Transfer\TransferInterface $eventTransfer
      * @param string $listener
      *
      * @return void

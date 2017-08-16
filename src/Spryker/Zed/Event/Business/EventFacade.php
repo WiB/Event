@@ -7,7 +7,7 @@
 
 namespace Spryker\Zed\Event\Business;
 
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 use Spryker\Zed\Kernel\Business\AbstractFacade;
 
 /**
@@ -22,7 +22,7 @@ class EventFacade extends AbstractFacade implements EventFacadeInterface
      * @api
      *
      * @param string $eventName
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $eventTransfer
+     * @param \Spryker\Shared\Transfer\TransferInterface $eventTransfer
      *
      * @return void
      */

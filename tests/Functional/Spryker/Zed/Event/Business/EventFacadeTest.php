@@ -12,7 +12,7 @@ use Generated\Shared\Transfer\EventQueueSendMessageBodyTransfer;
 use Generated\Shared\Transfer\QueueReceiveMessageTransfer;
 use Generated\Shared\Transfer\QueueSendMessageTransfer;
 use Spryker\Shared\Event\EventConstants;
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 use Spryker\Zed\Event\Business\EventBusinessFactory;
 use Spryker\Zed\Event\Business\EventFacade;
 use Spryker\Zed\Event\Dependency\Client\EventToQueueInterface;
@@ -216,7 +216,7 @@ class EventFacadeTest extends Test
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|\Spryker\Shared\Kernel\Transfer\TransferInterface
+     * @return \PHPUnit_Framework_MockObject_MockObject|\Spryker\Shared\Transfer\TransferInterface
      */
     protected function createTransferObjectMock()
     {
@@ -284,7 +284,7 @@ class EventFacadeTest extends Test
 
     /**
      * @param \Spryker\Zed\Event\Dependency\Plugin\EventListenerInterface|null $eventListenerMock
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface|null $transferObject
+     * @param \Spryker\Shared\Transfer\TransferInterface|null $transferObject
      *
      * @return \Generated\Shared\Transfer\QueueReceiveMessageTransfer
      */

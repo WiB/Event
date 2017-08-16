@@ -7,14 +7,14 @@
 
 namespace Spryker\Zed\Event\Business\Dispatcher;
 
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 
 interface EventDispatcherInterface
 {
 
     /**
      * @param string $eventName
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $eventTransfer
+     * @param \Spryker\Shared\Transfer\TransferInterface $eventTransfer
      *
      * @return void
      */

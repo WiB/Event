@@ -10,7 +10,7 @@ namespace Spryker\Zed\Event\Business\Queue\Producer;
 use Generated\Shared\Transfer\EventQueueSendMessageBodyTransfer;
 use Generated\Shared\Transfer\QueueSendMessageTransfer;
 use Spryker\Shared\Event\EventConstants;
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 use Spryker\Zed\Event\Dependency\Client\EventToQueueInterface;
 use Spryker\Zed\Event\Dependency\Service\EventToUtilEncodingInterface;
 
@@ -41,7 +41,7 @@ class EventQueueProducer implements EventQueueProducerInterface
 
     /**
      * @param string $eventName
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $eventTransfer
+     * @param \Spryker\Shared\Transfer\TransferInterface $eventTransfer
      * @param string $listener
      *
      * @return void
@@ -59,7 +59,7 @@ class EventQueueProducer implements EventQueueProducerInterface
     }
 
     /**
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $eventTransfer
+     * @param \Spryker\Shared\Transfer\TransferInterface $eventTransfer
      * @param string $listenerClassName
      * @param string $eventName
      *

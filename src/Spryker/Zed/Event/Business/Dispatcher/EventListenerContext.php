@@ -7,7 +7,7 @@
 
 namespace Spryker\Zed\Event\Business\Dispatcher;
 
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 use Spryker\Zed\Event\Dependency\Plugin\EventListenerInterface;
 
 class EventListenerContext implements EventListenerContextInterface
@@ -42,7 +42,7 @@ class EventListenerContext implements EventListenerContextInterface
     }
 
     /**
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $eventTransfer
+     * @param \Spryker\Shared\Transfer\TransferInterface $eventTransfer
      *
      * @return void
      */

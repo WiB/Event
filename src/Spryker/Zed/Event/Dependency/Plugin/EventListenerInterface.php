@@ -7,7 +7,7 @@
 
 namespace Spryker\Zed\Event\Dependency\Plugin;
 
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 
 interface EventListenerInterface
 {
@@ -15,7 +15,7 @@ interface EventListenerInterface
     /**
      * @api
      *
-     * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $eventTransfer
+     * @param \Spryker\Shared\Transfer\TransferInterface $eventTransfer
      *
      * @return void
      */

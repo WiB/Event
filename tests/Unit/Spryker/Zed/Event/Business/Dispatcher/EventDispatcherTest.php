@@ -8,7 +8,7 @@
 namespace Unit\Spryker\Zed\Event\Business\Dispatcher;
 
 use PHPUnit_Framework_TestCase;
-use Spryker\Shared\Kernel\Transfer\TransferInterface;
+use Spryker\Shared\Transfer\TransferInterface;
 use Spryker\Zed\Event\Business\Dispatcher\EventDispatcher;
 use Spryker\Zed\Event\Business\Logger\EventLoggerInterface;
 use Spryker\Zed\Event\Business\Queue\Producer\EventQueueProducerInterface;
@@ -165,7 +165,7 @@ class EventDispatcherTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @return \PHPUnit_Framework_MockObject_MockObject|\Spryker\Shared\Kernel\Transfer\TransferInterface
+     * @return \PHPUnit_Framework_MockObject_MockObject|\Spryker\Shared\Transfer\TransferInterface
      */
     protected function createTransferMock()
     {
